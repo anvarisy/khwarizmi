@@ -461,10 +461,10 @@ jQuery(document).ready(function($){
 	var $map = $('#contact_map');
 	if( $map.length ) {
 		$map.gMapResp({
-			address: 'Iamdesigning, 1/52,3/53, Lal Bahadhur Colony,Shringar Nagar Road, Near Gopal Naidu School, Peelamedu, Coimbatore, TN 641004',
+			address: 'Tapos I, Tenjolaya, Bogor, West Java 16370',
 			zoom: 16,
 			markers: [
-				{ 'address' : 'Iamdesigning, 1/52,3/53, Lal Bahadhur Colony,Shringar Nagar Road, Near Gopal Naidu School, Peelamedu, Coimbatore, TN 641004' }
+				{ 'address' : 'Tapos I, Tenjolaya, Bogor, West Java 16370' }
 			],
 			scrollwheel: false,
 			styles: [ { "stylers": [ { "featureType": "all" }, { "saturation": -100 }, { "gamma": 0.50 }, {"lightness": 30 } ] } ]

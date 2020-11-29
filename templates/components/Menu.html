@@ -1,0 +1,106 @@
+{%load static%}
+<div id="header-wrapper" class="dt-sticky-menu"> <!-- **header-wrapper Starts** -->
+    <header id="header">
+        <div class="container">
+                
+            <!-- **Logo - End** -->
+            <div id="logo">
+                <a href="{%url 'home'%}" title="khwarizmi"> <img src="{% static 'light/images/logo.png'%}" alt="logo"/> </a>
+            </div><!-- **Logo - End** -->
+            
+            <nav id="main-menu">
+                <div id="dt-menu-toggle" class="dt-menu-toggle">
+                  Menu
+                  <span class="dt-menu-toggle-icon"></span>
+                </div>
+                {%if page == 1 %}                  
+                <ul class="menu">
+                    <li class="current_page_item menu-item-simple-parent"><a class="overline" href="{%url 'home'%}" data-hover="Home">Home</a></li>
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'softdev'%}" data-hover="Services">Services</a>
+                      <ul class="sub-menu">
+                          <li><a class="overline" href="{%url 'softdev'%}">Software Developer</a></li>
+                          <li><a class="overline" href="{%url 'course' status=1 %}">Course Event</a></li>
+                          <li><a class="overline" href="{%url 'image-video'%}">Image & Video Creator</a></li>
+                      </ul>
+                      <a class="dt-menu-expand">+</a>                          
+                    </li>
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'products'%}" data-hover="Products">Products</a></li>
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'events'%}" data-hover="Contact Us">Contact Us</a></li>                        
+                </ul>
+                {%elif page == 2.1 %}
+                <ul class="menu">
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'home'%}" data-hover="Home">Home</a></li>
+                    <li class="current_page_item menu-item-simple-parent"><a class="overline" href="{%url 'softdev'%}" data-hover="Services">Services</a>
+                      <ul class="sub-menu">
+                          <li class="current_page_item"><a class="overline" href="{%url 'softdev'%}">Software Developer</a></li>
+                          <li><a class="overline" href="{%url 'course' status=1 %}">Course Event</a></li>
+                          <li><a class="overline" href="{%url 'image-video'%}">Image & Video Creator</a></li>
+                      </ul>
+                      <a class="dt-menu-expand">+</a>                          
+                    </li>
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'products'%}" data-hover="Products">Products</a></li>
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'events'%}" data-hover="Contact Us">Contact Us</a></li>                        
+                </ul>
+                {%elif page == 2.2 %}
+                <ul class="menu">
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'home'%}" data-hover="Home">Home</a></li>
+                    <li class="current_page_item menu-item-simple-parent"><a class="overline" href="{%url 'softdev'%}" data-hover="Services">Services</a>
+                      <ul class="sub-menu">
+                          <li><a class="overline" href="{%url 'softdev'%}">Software Developer</a></li>
+                          <li class="current_page_item"><a class="overline" href="{%url 'course' status=1 %}">Course Event</a></li>
+                          <li><a class="overline" href="{%url 'image-video'%}">Image & Video Creator</a></li>
+                      </ul>
+                      <a class="dt-menu-expand">+</a>                          
+                    </li>
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'products'%}" data-hover="Products">Products</a></li>
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'events'%}" data-hover="Contact Us">Contact Us</a></li>                        
+                </ul>
+                {%elif page == 2.3 %}
+                <ul class="menu">
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'home'%}" data-hover="Home">Home</a></li>
+                    <li class="current_page_item menu-item-simple-parent"><a class="overline" href="{%url 'softdev'%}" data-hover="Services">Services</a>
+                      <ul class="sub-menu">
+                          <li><a class="overline" href="{%url 'softdev'%}">Software Developer</a></li>
+                          <li><a class="overline" href="{%url 'course' status=1 %}">Course Event</a></li>
+                          <li  class="current_page_item"><a class="overline" href="{%url 'image-video'%}">Image & Video Creator</a></li>
+                      </ul>
+                      <a class="dt-menu-expand">+</a>                          
+                    </li>
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'products'%}" data-hover="Products">Products</a></li>
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'events'%}" data-hover="Contact Us">Contact Us</a></li>                        
+                </ul>
+                {%elif page == 3 %}
+                <ul class="menu">
+                    <li class=" menu-item-simple-parent"><a class="overline" href="{%url 'home'%}" data-hover="Home">Home</a></li>
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'softdev'%}" data-hover="Services">Services</a>
+                      <ul class="sub-menu">
+                          <li><a class="overline" href="{%url 'softdev'%}">Software Developer</a></li>
+                          <li><a class="overline" href="{%url 'course' status=1 %}">Course Event</a></li>
+                          <li><a class="overline" href="{%url 'image-video'%}">Image & Video Creator</a></li>
+                      </ul>
+                      <a class="dt-menu-expand">+</a>                          
+                    </li>
+                    <li class="current_page_item menu-item-simple-parent"><a class="overline" href="{%url 'products'%}" data-hover="Products">Products</a></li>
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'events'%}" data-hover="Contact Us">Contact Us</a></li>                        
+                </ul>
+                {%elif page == 4%}
+                <ul class="menu">
+                    <li class=" menu-item-simple-parent"><a class="overline" href="{%url 'home'%}" data-hover="Home">Home</a></li>
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'softdev'%}" data-hover="Services">Services</a>
+                      <ul class="sub-menu">
+                          <li><a class="overline" href="{%url 'softdev'%}">Software Developer</a></li>
+                          <li><a class="overline" href="{%url 'course' status=1 %}">Course Event</a></li>
+                          <li><a class="overline" href="{%url 'image-video'%}">Image & Video Creator</a></li>
+                      </ul>
+                      <a class="dt-menu-expand">+</a>                          
+                    </li>
+                    <li class="menu-item-simple-parent"><a class="overline" href="{%url 'products'%}" data-hover="Products">Products</a></li>
+                    <li class="current_page_item  menu-item-simple-parent"><a class="overline" href="{%url 'events'%}" data-hover="Contact Us">Contact Us</a></li>                        
+                </ul>
+                {%endif%}
+                
+            </nav>
+                
+        </div>
+    </header>	
+</div>  <!-- **header-wrapper Ends** -->

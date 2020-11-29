@@ -147,7 +147,6 @@
 	/*----*****---- << Portfolio Page >> ----*****----*/
 	
 	.portfolio figure img{ transform: translate3d( 0px, 0px, 0px) scale(1.12); -moz-transform: translate3d( 0px, 0px, 0px) scale(1.12); -webkit-transform: translate3d( 0px, 0px, 0px) scale(1.12);}
-	.portfolio figure video{ transform: translate3d( 0px, 0px, 0px) scale(1.12); -moz-transform: translate3d( 0px, 0px, 0px) scale(1.12); -webkit-transform: translate3d( 0px, 0px, 0px) scale(1.12);}
 	.fig-content span.image-overlay-inside::before{ line-height: 60px; height: 60px; width:60px; left: 60%; top:60%;}
 	.fig-content span.image-overlay-inside{ font-size: 18px;}
 	.portfolio .fig-content h5 a { font-size: 14px;}

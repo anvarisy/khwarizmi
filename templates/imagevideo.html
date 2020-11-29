@@ -1,0 +1,119 @@
+{% extends 'components/Root.html'%}{%load static%}
+{%block head%}
+
+{%endblock head%}
+{%block content%}
+<div class="breadcrumb" style="background: url('{%static 'images/patterns/pattern10.jpg'%}')">
+    <div class="container">
+        <h2>K-Beauty</h2>
+        <h3>lets create your own illustrations</h3>
+    </div>
+</div>
+<div class="fullwidth-section"> <!-- **Full-width-section Starts Here** -->
+    <div class="container">
+           <div class="main-title">
+            <h3>Our Styles ?</h3>
+            <h6>
+                Feel free to look some of our creations
+            </h6>
+        </div>
+    </div>
+
+ 
+</div>
+
+<section id="primary" class="content-full-width">
+    <div class="dt-sc-hr-invisible-small"></div>
+    <div class="fullwidth-section"> <!-- **fullwidth-section Starts Here** -->
+        <div class="container">
+            <div class="dt-sc-sorting-container">
+                <a data-filter=".all-sort" class="active-sort" href="#" >All</a>     
+                <a data-filter=".branding-sort" href="#" >Branding</a>
+                <a href="#" data-filter=".identity-sort" >Identity</a>         
+                <a href="#" data-filter=".magazine-sort" >Magazine</a>         
+                <a data-filter=".print-sort" href="#" >Print</a>
+                <a data-filter=".illustration-sort" href="#" >Illustration</a>
+            </div>
+        </div>
+        <div class="dt-sc-portfolio-container isotope no-space"> <!-- **dt-sc-portfolio-container Starts Here** -->
+            <div class="portfolio dt-sc-one-half column no-space all-sort magazine-sort">
+                <figure>
+                    <img src="{%static 'images/icon_fq.jpg'%}" alt="portfolio1" title="Sweet candy Packaging">
+                    <figcaption>
+                        <div class="fig-content">
+                            <a href="{%static 'images/icon_fq.jpg'%}" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+                            <h5><a href="portfolio-detail.html">Sweet candy Packaging</a></h5>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="portfolio dt-sc-one-half column no-space all-sort branding-sort identity-sort">
+                <figure>
+                    <img src="http://placehold.it/800x400&text=Portfolio+Image2" alt="portfolio2" title="Sweet candy Packaging">
+                    <figcaption>
+                        <div class="fig-content">
+                            <a href="http://placehold.it/800x400&text=Portfolio+Image2" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+                            <h5><a href="portfolio-detail-with-left-sidebar.html">Sweet candy Packaging</a></h5>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="portfolio dt-sc-one-half column no-space all-sort branding-sort magazine-sort identity-sort">
+                <figure>
+                    <img src="http://placehold.it/800x400&text=Portfolio+Image3" alt="portfolio3" title="Sweet candy Packaging">
+                    <figcaption>
+                        <div class="fig-content">
+                            <a href="http://placehold.it/800x400&text=Portfolio+Image3" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+                            <h5><a href="portfolio-detail-with-right-sidebar.html">Sweet candy Packaging</a></h5>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="portfolio dt-sc-one-half column no-space all-sort branding-sort magazine-sort print-sort">
+                <figure>
+                    <img src="http://placehold.it/800x400&text=Portfolio+Image4" alt="portfolio4" title="Sweet candy Packaging">
+                    <figcaption>
+                        <div class="fig-content">
+                            <a href="http://placehold.it/800x400&text=Portfolio+Image4" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+                            <h5><a href="portfolio-detail.html">Sweet candy Packaging</a></h5>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="portfolio dt-sc-one-half column no-space all-sort illustration-sort print-sort">
+                <figure>
+                    <img src="http://placehold.it/800x400&text=Portfolio+Image5" alt="portfolio5" title="Sweet candy Packaging">
+                    <figcaption>
+                        <div class="fig-content">
+                            <a href="http://placehold.it/800x400&text=Portfolio+Image5" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+                            <h5><a href="portfolio-detail-with-left-sidebar.html">Sweet candy Packaging</a></h5>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="portfolio dt-sc-one-half column no-space all-sort branding-sort illustration-sort">
+                <figure>
+                    <video poster="https://pbs.twimg.com/profile_images/820591384155537413/ZuSg7rUg_400x400.jpg" alt="portfolio2" title="Sweet candy Packaging" controls>
+                        
+                    </video>                    
+                    <figcaption>
+                        <div class="fig-content">
+                            <a href="https://www.youtube.com/watch?v=aC9IcXIkTRI" data-gal="prettyPhoto[gallery]"><span class="image-overlay-inside"></span></a>
+                            <h5><a href="portfolio-detail-with-right-sidebar.html">Sweet candy Packaging</a></h5>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div> <!-- **dt-sc-portfolio-container Ends Here** -->
+
+        <!-- <div class="aligncenter">
+            <a href="#" data-hover="More" class="overline loadmore">More</a>
+        </div> -->
+    </div> <!-- **fullwidth-section Ends Here** -->
+   
+</section> <!-- **Primary Ends Here** -->
+
+{%endblock content%}
+{%block script%}
+<script src="{% static 'js/my-custom.js'%}" type="text/javascript"></script>
+{%endblock script%}
