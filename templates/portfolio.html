@@ -62,9 +62,12 @@
             </div>
             {%else%}
             {%endif%}
+            {%if status < total|add:'-1'%}
             <div class="post-next-link">
                 <a class="overline overline-left dt-sc-button" data-hover="Next" href="{%url 'portfolio' status|add:'1'%}">Next</a>
-            </div>                
+            </div>
+            {%else%}
+            {%endif%}                
         </div> <!-- **Post-Nav-container Ends Here** -->
     </section> <!-- **Primary Ends Here** -->            
 </div>

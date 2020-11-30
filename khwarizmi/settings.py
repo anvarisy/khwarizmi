@@ -25,7 +25,7 @@ SECRET_KEY = '-5ylw0c490z*@%y+o^9tgv^x(^#gom6@ukwmpxvir_#@m333sg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['test.khwarizmi.co.id']
+ALLOWED_HOSTS = ['test.khwarizmi.co.id','127.0.0.1']
 
 
 # Application definition

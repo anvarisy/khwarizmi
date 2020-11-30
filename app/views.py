@@ -47,7 +47,8 @@ class ViewCourseEvent(View):
             'icon':'http://'+base_url+'/static/images/icon_qas.jpg'
             }
             ]
-        return render(request, self.template,{'title':'Alkhwarizmi','page':2.2,'status':status,'data':data[status]})
+        print(len(data))
+        return render(request, self.template,{'title':'Alkhwarizmi','page':2.2,'status':status,'data':data[status],'total':len(data)})
 
 class ViewImageVideo(View):
     template = 'imagevideo.html'
@@ -98,4 +99,4 @@ class ViewPortfolio(View):
             }
             ]
         
-        return render(request, self.template,{'title':'Alkhwarizmi','page':2.1,'status':status,'data':data[status]})
+        return render(request, self.template,{'title':'Alkhwarizmi','page':2.1,'status':status,'data':data[status],'total':len(data)})
